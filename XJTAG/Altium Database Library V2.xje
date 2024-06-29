@@ -1,0 +1,34 @@
+CIRCUIT NAME := "Altium Database Library V2"
+
+  COMPAT_VERSION := 10; // BoardInit_ProjectLibrary
+
+  // JTAG interface description
+  JTAG CHAIN
+    CONNECTOR "JTAG Header"
+      MAPPING
+      END;
+    END;
+  END;
+
+  // Normal Connection Test
+  CONNTEST
+    TEST := CONNTEST;
+    MAX_NETS := 0;
+    INDIRECT := ALL;
+    ONE_WAY := FALSE;
+  END;
+
+  // Additional files
+  FILES
+    "Globals.xje";
+  END;
+
+  // Library files used in the project
+  LIBRARY_LIST
+    "Globals.xje"
+      VERSION := "1.1";
+      CHECKSUM := "21e716e7f0ba6a6c59252fa3ec6538c6";
+    END;
+  END;
+END;
+
